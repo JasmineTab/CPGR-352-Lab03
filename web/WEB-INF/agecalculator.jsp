@@ -1,9 +1,3 @@
-<%-- 
-    Document   : agecalculator
-    Created on : 26-May-2022, 10:49:21 AM
-    Author     : User
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,10 +9,11 @@
         <h1>Age Calculator</h1>
         <form method="post" action="age">
             <label>Enter your age:</label>
-            <input type="number" name="age_number" value="${ageNumber}">
+            <input type="text" name="age_number" value="">
             <br>
             <input type="submit" value="Age next birthday">
         </form>
         <p>${message}</p>
+        <a href="arithmetic">Arithmetic Calculator</a>
     </body>
 </html>
