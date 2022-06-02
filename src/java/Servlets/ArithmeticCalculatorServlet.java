@@ -30,11 +30,11 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
         String second = request.getParameter("second_input");
         String math = request.getParameter("math");
 
-        request.setAttribute("first_input", "first_input");
-        request.setAttribute("second_input", "second_input");
+        request.setAttribute("first", first);
+        request.setAttribute("second", second);
 
         if (first.equals("") || first == null || second.equals("") || second == null) {
-            resultOut = "Invalid";
+            resultOut = "invalid";
             request.setAttribute("result", resultOut);
         } else if (!first.matches(".*[0-9999999].*") || !second.matches(".*[0-9999999].*")) {
             resultOut = "invalid";
